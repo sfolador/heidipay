@@ -25,7 +25,7 @@ class HeidipayServiceProvider extends PackageServiceProvider
         $this->app->bind(HeidipayInterface::class, function () {
 
             return new Heidipay(
-            /** @phpstan-ignore-next-line  */
+                /** @phpstan-ignore-next-line  */
                 apiUrl: config('heidipay.api_url'),
                 /** @phpstan-ignore-next-line  */
                 merchantKey: config('heidipay.merchant_key')
